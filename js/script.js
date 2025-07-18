@@ -1,12 +1,3 @@
-// // preloader function starts here
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    document.getElementById("preloader").style.display = "none";
-    document.getElementById("main-content").style.display = "block";
-  }, 15000);
-});
-// // preloader function ends here
-
 // the nav-bar toggle function
 function toggleMenu() {
   const nav = document.getElementById("navLinks");
