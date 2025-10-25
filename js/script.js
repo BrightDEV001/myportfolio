@@ -76,16 +76,6 @@ const observer = new IntersectionObserver(
 const skillSection = document.querySelector(".the-skill");
 observer.observe(skillSection);
 
-// window.addEventListener("DOMContentLoaded", () => {
-//   const fills = document.querySelectorAll(".skill-fill");
-//   fills.forEach((fill) => {
-//     const percent = fill.getAttribute("data-percent");
-//     setTimeout(() => {
-//       fill.style.width = percent;
-//     }, 300);
-//   });
-// });
-
 // portfolio section javascript
 
 function showOverlay(selectedItem) {
@@ -142,8 +132,6 @@ function filterProjects(category) {
       project.style.display = "none";
     }
   });
-
-  // Optional: update active class on nav
   const navLinks = document.querySelectorAll(".project-navbar a");
   navLinks.forEach((link) => link.classList.remove("active"));
   document.querySelector(`[data-filter="${category}"]`).classList.add("active");
